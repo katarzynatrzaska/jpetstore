@@ -18,7 +18,7 @@ public class TestBase {
 
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+        driver.manage().window().maximize();
         driver.navigate().to("http://przyklady.javastart.pl/jpetstore/");
     }
 

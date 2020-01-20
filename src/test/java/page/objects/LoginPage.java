@@ -25,7 +25,7 @@ public class LoginPage {
     }
 
     public void typeIntoUserNameField(String username) {
-        WaitForElement.waitUntilElementIsVisible(usernameField);
+       // WaitForElement.waitUntilElementIsVisible(usernameField);
         usernameField.sendKeys(username);
     }
 
@@ -38,7 +38,7 @@ public class LoginPage {
     }
 
     public String getWarningMessage() {
-        WaitForElement.waitUntilElementIsVisible(messageLabel);
+       // WaitForElement.waitUntilElementIsVisible(messageLabel);
         String warningText = messageLabel.getText();
         return warningText;
     }

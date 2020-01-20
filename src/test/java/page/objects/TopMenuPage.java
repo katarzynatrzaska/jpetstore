@@ -16,7 +16,7 @@ public class TopMenuPage {
     }
 
     public void clickOnSignInLink(){
-        WaitForElement.waitUntilElementIsClickable(signOnLink);
+       // WaitForElement.waitUntilElementIsClickable(signOnLink);
         signOnLink.click();
     }
 

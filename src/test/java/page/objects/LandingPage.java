@@ -1,3 +1,4 @@
+
 package page.objects;
 
 
@@ -17,7 +18,7 @@ public class LandingPage {
     }
 
     public void clickOnEnterStoreLink() {
-        WaitForElement.waitUntilElementIsClickable(enterStoreLink);
+       // WaitForElement.waitUntilElementIsClickable(enterStoreLink);
         enterStoreLink.click();
     }
 

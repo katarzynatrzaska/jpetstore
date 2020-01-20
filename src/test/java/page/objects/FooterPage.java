@@ -15,10 +15,10 @@ public class FooterPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    public boolean isBannerAfterLoginDisplayed(){
-        WaitForElement.waitUntilElementIsVisible(bannerAfterLoginLogo);
-        boolean isDisplayed = bannerAfterLoginLogo.isDisplayed();
-        return isDisplayed;
-    }
+    //public boolean isBannerAfterLoginDisplayed(){
+        //WaitForElement.waitUntilElementIsVisible(bannerAfterLoginLogo);
+        //boolean isDisplayed = bannerAfterLoginLogo.isDisplayed();
+        //return isDisplayed;
+  //  }
 
 }

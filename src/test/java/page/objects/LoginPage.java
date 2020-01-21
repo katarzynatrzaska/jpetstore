@@ -28,29 +28,32 @@ public class LoginPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    public void typeIntoUserNameField(String username) {
-       // WaitForElement.waitUntilElementIsVisible(usernameField);
+    public LoginPage typeIntoUserNameField(String username) {
+        // WaitForElement.waitUntilElementIsVisible(usernameField);
         usernameField.sendKeys(username);
         logger.info("Typed into User Name Field {}", username);
+        return this;
 
     }
 
-    public void typeIntoPasswordField(String password) {
+    public LoginPage typeIntoPasswordField(String password) {
         passwordField.sendKeys(password);
         logger.info("Typed into Password Field {}", password);
+        return this;
 
     }
 
-    public void clickOnLoginButton() {
+    public FooterPage clickOnLoginButton() {
         signOnButton.click();
         logger.info("Clicked on Login Button");
+        return new FooterPage();
 
     }
 
     public String getWarningMessage() {
-       // WaitForElement.waitUntilElementIsVisible(messageLabel);
+        // WaitForElement.waitUntilElementIsVisible(messageLabel);
         String warningText = messageLabel.getText();
-            logger.info("Returned warning message was: {}", warningText);
+        logger.info("Returned warning message was: {}", warningText);
         return warningText;
     }
 

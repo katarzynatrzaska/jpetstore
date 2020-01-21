@@ -19,9 +19,9 @@ public class FooterPage {
     }
 
     //public boolean isBannerAfterLoginDisplayed(){
-        //WaitForElement.waitUntilElementIsVisible(bannerAfterLoginLogo);
-        //boolean isDisplayed = bannerAfterLoginLogo.isDisplayed();
-        //return isDisplayed;
-  //  }
+    //WaitForElement.waitUntilElementIsVisible(bannerAfterLoginLogo);
+    //boolean isDisplayed = bannerAfterLoginLogo.isDisplayed();
+    //return isDisplayed;
+    //  }
 
 }
